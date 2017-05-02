@@ -22,11 +22,4 @@ class PasswordCredentials extends GrantTypeBase
         return array_merge(parent::getRequired(), [self::CONFIG_USERNAME => '', self::CONFIG_PASSWORD => '']);
     }
 
-    protected function getAdditionalOptions()
-    {
-        return [
-            'json' => $this->getRequired()
-        ];
-    }
-
 }
